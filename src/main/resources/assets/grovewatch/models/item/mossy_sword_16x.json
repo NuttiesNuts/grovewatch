@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "grovewatch:item/mossy_sword_16x"
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "grovewatch",
+	"version": "${version}",
+	"name": "Grovewatch",
+	"description": "",
+	"authors": [
+		"NuttiesNuts"
+	],
+	"contact": {
+		"homepage": "https://sigma-co.uk/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/grovewatch/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"uk.sigma_co.Grovewatch"
+		],
+		"fabric-datagen": [
+          "uk.sigma_co.datagen.GrovewatchDataGenerator"
+		]
+	},
+	"mixins": [
+		"grovewatch.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

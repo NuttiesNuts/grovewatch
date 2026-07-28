@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:model",
+          "model": "grovewatch:item/mossy_sword_16x"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "grovewatch:item/mossy_sword_32x"
+    }
+  }
+}
