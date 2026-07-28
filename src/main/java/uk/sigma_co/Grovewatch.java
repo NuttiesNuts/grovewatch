@@ -19,8 +19,4 @@ public class Grovewatch implements ModInitializer {
 
         ModItems.initialize();
 	}
-
-	public static Identifier id(String path) {
-		return Identifier.fromNamespaceAndPath(MOD_ID, path);
-	}
 }
