@@ -1,6 +1,8 @@
-# Grovewatch
+![title](src/main/resources/assets/grovewatch/title.png)
 
 ---
 
+Minecraft mod about ancient forgotten lore of the jungle and coffee, lot's of coffee
+
 ## Credits:
-- [Text Effects](https://modrinth.com/mod/text-effects) mod by moehreag
+- [Embers Text API](https://modrinth.com/mod/embers-text-api) mod by TysonTheEmber
