@@ -1,3 +1,18 @@
 {
-  "parent": "bettercombat:claymore"
+  "parent": "bettercombat:claymore",
+  "attributes": {
+    "trail_appearance": {
+      "default_appearance": {
+        "primary": {
+          "color_rgba": 1923240191,
+          "glows": false
+        },
+        "secondary": {
+          "color_rgba": 2746827007,
+          "glows": false
+        }
+      },
+      "conditional": {}
+    }
+  }
 }

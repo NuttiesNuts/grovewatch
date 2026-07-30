@@ -2,8 +2,6 @@ package uk.sigma_co;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.resources.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.sigma_co.item.ModItems;

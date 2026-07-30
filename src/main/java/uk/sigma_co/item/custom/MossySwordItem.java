@@ -1,5 +1,6 @@
 package uk.sigma_co.item.custom;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -11,10 +12,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import org.jspecify.annotations.Nullable;
 
 import java.util.WeakHashMap;
+import java.util.function.Consumer;
 
 public class MossySwordItem extends Item {
     public MossySwordItem(Properties properties) {
@@ -27,7 +31,7 @@ public class MossySwordItem extends Item {
 
     @Override
     public Component getName(ItemStack itemStack) {
-        return Component.literal("<grad colors=67a538,bfd64f>" + super.getName(itemStack).getString());
+        return Component.literal("<grad colors=67a538,bfd64f>" + super.getName(itemStack).getString()).withStyle(ChatFormatting.BOLD);
     }
 
     @Override
@@ -46,6 +50,12 @@ public class MossySwordItem extends Item {
         } else {
             return 0f;
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+        builder.accept(Component.literal("Passive effect: ").withStyle(ChatFormatting.GOLD));
+        builder.accept(Component.literal(" -Gain " + ((int) bonusDamage) + " attack damage when standing on grass").withStyle(ChatFormatting.YELLOW));
     }
 
     @Override
