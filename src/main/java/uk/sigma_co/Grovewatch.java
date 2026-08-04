@@ -1,9 +1,11 @@
 package uk.sigma_co;
 
+import net.bettercombat.api.fx.ItemConditions;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import uk.sigma_co.component.ModComponents;
 import uk.sigma_co.item.ModItems;
 
 public class Grovewatch implements ModInitializer {
@@ -16,5 +18,8 @@ public class Grovewatch implements ModInitializer {
 		LOGGER.info("skibidi skibidi 67!");
 
         ModItems.initialize();
+        ModComponents.initialize();
+
+        ItemConditions.register("isOnGrass", itemStack -> itemStack.get(ModComponents.ON_GRASS_COMPONENT));
 	}
 }

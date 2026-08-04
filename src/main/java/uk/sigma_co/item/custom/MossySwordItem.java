@@ -5,10 +5,11 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -16,18 +17,19 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import org.jspecify.annotations.Nullable;
+import uk.sigma_co.component.ModComponents;
 
 import java.util.WeakHashMap;
 import java.util.function.Consumer;
 
 public class MossySwordItem extends Item {
     public MossySwordItem(Properties properties) {
-        super(properties.rarity(Rarity.EPIC));
+        super(properties.rarity(Rarity.EPIC).component(ModComponents.ON_GRASS_COMPONENT, false));
     }
 
     private WeakHashMap map = new WeakHashMap<Entity, BlockPos>();
 
-    private float bonusDamage = 10f;
+    private float bonusDamage = 10f; // erm, whatthesigma
 
     @Override
     public Component getName(ItemStack itemStack) {
@@ -39,6 +41,10 @@ public class MossySwordItem extends Item {
         if (owner.onGround()) {
             map.put(owner, owner.getOnPos());
         }
+
+        if (map.containsKey(owner) && level.getBlockState((BlockPos) map.get(owner)).is(BlockTags.GRASS_BLOCKS)){
+            itemStack.set(ModComponents.ON_GRASS_COMPONENT, true);
+        } else itemStack.set(ModComponents.ON_GRASS_COMPONENT, false);
     }
 
     @Override
@@ -59,8 +65,7 @@ public class MossySwordItem extends Item {
     }
 
     @Override
-    public void postHurtEnemy(ItemStack itemStack, LivingEntity mob, LivingEntity attacker) {
-        //mob.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 300), attacker);
-        super.postHurtEnemy(itemStack, mob, attacker);
+    public boolean allowComponentsUpdateAnimation(Player player, InteractionHand hand, ItemStack oldStack, ItemStack newStack) {
+        return false;
     }
 }
