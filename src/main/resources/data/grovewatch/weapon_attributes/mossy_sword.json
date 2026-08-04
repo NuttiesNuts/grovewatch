@@ -4,15 +4,26 @@
     "trail_appearance": {
       "default_appearance": {
         "primary": {
-          "color_rgba": 1923240191,
+          "color_rgba": 4294967193,
           "glows": false
         },
         "secondary": {
-          "color_rgba": 2746827007,
+          "color_rgba": 2576980326,
           "glows": false
         }
       },
-      "conditional": {}
+      "conditional": {
+        "isOnGrass": {
+          "primary": {
+            "color_rgba": 1923240191,
+            "glows": true
+          },
+          "secondary": {
+            "color_rgba": 2746827007,
+            "glows": true
+          }
+        }
+      }
     }
   }
 }
