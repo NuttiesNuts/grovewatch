@@ -17,6 +17,7 @@ public class GrovewatchDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockLootTableProvider::new);
         pack.addProvider(ModRegistryDataProvider::new);
         pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModItemTagProvider::new);
 	}
 
     @Override
