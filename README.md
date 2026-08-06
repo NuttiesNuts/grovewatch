@@ -12,12 +12,13 @@ Minecraft mod about ancient forgotten lore of the jungle and coffee, lot's of co
 
 Cool big ahh sword that deals more damage when standing on grass.
 
-![sword_info.png](src/main/resources/assets/grovewatch/sword_info.png)
+![sword_info.png](https://raw.githubusercontent.com/NuttiesNuts/grovewatch/refs/heads/master/src/main/resources/assets/grovewatch/sword_info.png)
 
 ## Coffee
 
 Yes, coffee. You can find coffee bushes in jungles.
-![bush_area.png](src/main/resources/assets/grovewatch/bush_area.png)
+![bush_area.png](https://raw.githubusercontent.com/NuttiesNuts/grovewatch/refs/heads/master/src/main/resources/assets/grovewatch/bush_area.png)
+
 (I know they look like sweet berries, but [this](https://www.youtube.com/watch?v=dQw4w9WgXcQ) is how it looks IRL)
 
 ---
@@ -25,6 +26,6 @@ Yes, coffee. You can find coffee bushes in jungles.
 ### Credits:
 - [Embers Text API](https://modrinth.com/mod/embers-text-api) mod by TysonTheEmber
 
-<img src="src/main/resources/assets/grovewatch/skibidi.gif" width="20%" height="20%"></img>
+<img src="https://raw.githubusercontent.com/NuttiesNuts/grovewatch/refs/heads/master/src/main/resources/assets/grovewatch/skibidi.gif" width="20%" height="20%"></img>
 
 skibidi
