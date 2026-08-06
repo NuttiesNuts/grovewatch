@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import uk.sigma_co.block.ModBlocks;
 import uk.sigma_co.component.ModComponents;
 import uk.sigma_co.item.ModItems;
+import uk.sigma_co.world.gen.ModWorldGeneration;
 
 public class Grovewatch implements ModInitializer {
 	public static final String MOD_ID = "grovewatch";
@@ -22,7 +23,9 @@ public class Grovewatch implements ModInitializer {
         ModBlocks.initialize();
         ModComponents.initialize();
 
+        ModWorldGeneration.generateModWorldGen();
+
         // Better Combat trail condition
         ItemConditions.register("isOnGrass", itemStack -> itemStack.get(ModComponents.ON_GRASS_COMPONENT));
-	}
+    }
 }
