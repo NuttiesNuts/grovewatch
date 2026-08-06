@@ -3,7 +3,7 @@
   "id": "grovewatch",
   "version": "${version}",
   "name": "Grovewatch",
-  "description": "",
+  "description": "Minecraft mod about ancient forgotten lore of the jungle and coffee, lot's of coffee.",
   "authors": [
     "NuttiesNuts"
   ],
@@ -34,7 +34,7 @@
     "java": ">=25",
     "fabric-api": "*"
   },
-  "suggests": {
+  "recommends": {
     "bettercombat": "*"
   }
 }

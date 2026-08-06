@@ -9,5 +9,6 @@ public class GrovewatchDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(ModEnglishLangProvider::new);
+        pack.addProvider(ModModelProvider::new);
 	}
 }
