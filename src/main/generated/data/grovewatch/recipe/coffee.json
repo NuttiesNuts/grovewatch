@@ -13,7 +13,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": "#c:drinks/watery",
+    "B": "minecraft:water_bucket",
     "a": "grovewatch:coffee_filter",
     "c": "grovewatch:ground_coffee"
   },

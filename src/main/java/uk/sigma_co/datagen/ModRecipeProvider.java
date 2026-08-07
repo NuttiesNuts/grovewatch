@@ -57,7 +57,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("cac")
                         .pattern(" B ")
                         .define('a', ModItems.COFFEE_FILTER)
-                        .define('B', ConventionalItemTags.WATERY_DRINKS)
+                        .define('B', Items.WATER_BUCKET)
                         .define('c', ModItems.GROUND_COFFEE)
                         .unlockedBy(getHasName(ModItems.COFFEE_BEAN_ROASTED), has(ModItems.COFFEE_BEAN_ROASTED))
                         .save(withConditions(output, ResourceConditions.not(ResourceConditions.allModsLoaded(Grovewatch.FARMERS_DELIGHT_ID))));

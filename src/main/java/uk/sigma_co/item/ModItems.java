@@ -14,7 +14,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
-import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import org.jetbrains.annotations.Nullable;
 import uk.sigma_co.Grovewatch;
@@ -24,7 +23,6 @@ import uk.sigma_co.item.custom.MossySwordItem;
 import uk.sigma_co.mob_effect.ModEffects;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Function;
 
 public class ModItems {
@@ -72,6 +70,7 @@ public class ModItems {
     public static final ResourceKey<CreativeModeTab> GROVEWATCH_CREATIVE_TAB_KEY = ResourceKey.create(
             BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "creative_tab")
     );
+
     public static final CreativeModeTab GROVEWATCH_CREATIVE_TAB = FabricCreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.COFFEE_BEAN_ROASTED))
             .title(Component.translatable("creativeTab.grovewatch"))
