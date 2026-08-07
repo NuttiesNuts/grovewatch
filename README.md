@@ -4,7 +4,7 @@
 [![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/mod/grovewatch)
 [![curseforge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg)](https://www.curseforge.com/minecraft/mc-mods/grovewatch)
 
-Minecraft mod about ancient forgotten lore of the jungle and coffee, lot's of coffee.
+Minecraft mod about ancient forgotten lore of the jungle and coffee, lots of coffee.
 
 ---
 
@@ -21,10 +21,17 @@ Yes, coffee. You can find coffee bushes in jungles.
 
 (I know they look like sweet berries, but [this](https://www.youtube.com/watch?v=dQw4w9WgXcQ) is how it looks IRL)
 
+Coffee can be also made using other mods features. 
+
+Grovewatch is compatible with:
+
+- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-refabricated) by vectorwing
+- [Create](https://www.curseforge.com/minecraft/mc-mods/create-fabric) by simibubi
+
 ---
 
 ### Credits:
-- [Embers Text API](https://modrinth.com/mod/embers-text-api) mod by TysonTheEmber
+- [Embers Text API](https://www.curseforge.com/minecraft/mc-mods/embers-text-api) by TysonTheEmber
 
 <img src="https://raw.githubusercontent.com/NuttiesNuts/grovewatch/refs/heads/master/src/main/resources/assets/grovewatch/skibidi.gif" width="20%" height="20%"></img>
 
