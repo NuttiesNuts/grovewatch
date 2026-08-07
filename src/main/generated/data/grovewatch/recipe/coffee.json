@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:all_mods_loaded",
+        "values": [
+          "farmersdelight"
+        ]
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "#c:drinks/watery",
+    "a": "grovewatch:coffee_filter",
+    "c": "grovewatch:ground_coffee"
+  },
+  "pattern": [
+    "ccc",
+    "cac",
+    " B "
+  ],
+  "result": {
+    "id": "grovewatch:coffee"
+  }
+}

@@ -2,7 +2,7 @@
   "type": "farmersdelight:cooking",
   "experience": 1.0,
   "ingredients": [
-    "#c:drinks/water",
+    "#c:drinks/watery_drinks",
     "grovewatch:ground_coffee",
     "grovewatch:ground_coffee",
     "grovewatch:ground_coffee",

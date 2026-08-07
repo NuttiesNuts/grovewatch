@@ -13,6 +13,7 @@ import uk.sigma_co.world.gen.ModWorldGeneration;
 
 public class Grovewatch implements ModInitializer {
 	public static final String MOD_ID = "grovewatch";
+	public static final String FARMERS_DELIGHT_ID = "farmersdelight";
 
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID.replace("g", "G"));
 

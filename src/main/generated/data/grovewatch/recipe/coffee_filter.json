@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "#c:strings",
+    "#c:strings"
+  ],
+  "result": {
+    "id": "grovewatch:coffee_filter"
+  }
+}

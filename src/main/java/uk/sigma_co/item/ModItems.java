@@ -51,12 +51,22 @@ public class ModItems {
             Item::new,
             new Item.Properties().food(new FoodProperties(1, 0.5f, true))
     );
+    public static final Item GROUND_COFFEE = register(
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "ground_coffee")),
+            Item::new,
+            new Item.Properties()
+    );
     public static final Item COFFEE = register(
             ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "coffee")),
             CoffeeItem::new,
-           drinkItem(Consumables.defaultDrink()
+            drinkItem(Consumables.defaultDrink()
                    .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.CAFFEINE, 12000)))
                    .build())
+    );
+    public static final Item COFFEE_FILTER = register(
+            ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "coffee_filter")),
+            Item::new,
+            new Item.Properties()
     );
 
     public static final ResourceKey<CreativeModeTab> GROVEWATCH_CREATIVE_TAB_KEY = ResourceKey.create(

@@ -5,6 +5,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import uk.sigma_co.Grovewatch;
 
 /**
  * References to tags belonging to other mods, which Grovewatch innately supports.
@@ -19,7 +20,7 @@ public class CompatibilityTags {
     public static final TagKey<Item> CREATE_UPRIGHT_ON_BELT = externalItemTag(CREATE, "upright_on_belt");
 
     // Farmer's Delight
-    public static final String FARMERS_DELIGHT = "farmers_delight";
+    public static final String FARMERS_DELIGHT = Grovewatch.FARMERS_DELIGHT_ID;
     public static final TagKey<Item> DRINKS = externalItemTag(FARMERS_DELIGHT, "drinks");
 
     // Create Crafts and Additions

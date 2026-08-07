@@ -44,8 +44,8 @@ public class Util {
     }
 
     /**
-     * Gets text from a translation key, where "type" prefixes Farmer's Delight's mod ID.
-     * Example: "type.farmersdelight.key".
+     * Gets text from a translation key, where "type" prefixes the mod ID.
+     * Example: "type.grovewatch.key".
      *
      * @param translationType The type of lang being read, added as a prefix
      * @param translationKey  The key itself, added as a suffix after the mod ID
