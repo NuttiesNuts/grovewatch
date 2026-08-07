@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import uk.sigma_co.item.ModItems;
+import uk.sigma_co.mob_effect.ModEffects;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -26,5 +27,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
             translationBuilder.add(item, formatted);
         });
+
+        translationBuilder.add(ModItems.GROVEWATCH_CREATIVE_TAB_KEY, "Grovewatch");
+        translationBuilder.add(ModEffects.CAFFEINE.value(), "Caffeinated");
     }
 }

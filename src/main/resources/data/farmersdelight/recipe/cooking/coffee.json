@@ -1,0 +1,15 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    "#c:drinks/water",
+    "grovewatch:ground_coffee",
+    "grovewatch:ground_coffee",
+    "grovewatch:ground_coffee",
+    "grovewatch:coffee_filter"
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "id": "grovewatch:coffee"
+  }
+}

@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import uk.sigma_co.block.ModBlocks;
 import uk.sigma_co.component.ModComponents;
 import uk.sigma_co.item.ModItems;
+import uk.sigma_co.mob_effect.ModEffects;
 import uk.sigma_co.world.gen.ModWorldGeneration;
 
 public class Grovewatch implements ModInitializer {
@@ -22,6 +23,7 @@ public class Grovewatch implements ModInitializer {
         ModItems.initialize();
         ModBlocks.initialize();
         ModComponents.initialize();
+        ModEffects.initialize();
 
         ModWorldGeneration.generateModWorldGen();
 
