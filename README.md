@@ -21,6 +21,8 @@ Yes, coffee. You can find coffee bushes in jungles.
 
 (I know they look like sweet berries, but [this](https://www.youtube.com/watch?v=dQw4w9WgXcQ) is how it looks IRL)
 
+![coffee.png](https://raw.githubusercontent.com/NuttiesNuts/grovewatch/refs/heads/master/src/main/resources/assets/grovewatch/coffee.png)
+
 Coffee can be also made using other mods features. 
 
 Grovewatch is compatible with:
