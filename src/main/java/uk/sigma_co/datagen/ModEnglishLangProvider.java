@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
+import uk.sigma_co.Grovewatch;
 import uk.sigma_co.item.ModItems;
 import uk.sigma_co.mob_effect.ModEffects;
 
@@ -30,5 +31,9 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.GROVEWATCH_CREATIVE_TAB_KEY, "Grovewatch");
         translationBuilder.add(ModEffects.CAFFEINE.value(), "Caffeinated");
+        translationBuilder.add("jei." + Grovewatch.MOD_ID + ".info.coffee_berry",
+                "Coffee Berries can be commonly found as bushes in jungles.");
+        translationBuilder.add("jei." + Grovewatch.MOD_ID + ".info.coffee",
+                "Drinking Coffee will bring energy to the player and keep phantoms away for the duration of the effect.");
     }
 }

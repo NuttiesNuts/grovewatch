@@ -7,5 +7,7 @@
   "item.grovewatch.coffee_berry": "Coffee Berry",
   "item.grovewatch.coffee_filter": "Coffee Filter",
   "item.grovewatch.ground_coffee": "Ground Coffee",
-  "item.grovewatch.mossy_sword": "Mossy Sword"
+  "item.grovewatch.mossy_sword": "Mossy Sword",
+  "jei.grovewatch.info.coffee": "Drinking Coffee will bring energy to the player and keep phantoms away for the duration of the effect.",
+  "jei.grovewatch.info.coffee_berry": "Coffee Berries can be commonly found as bushes in jungles."
 }

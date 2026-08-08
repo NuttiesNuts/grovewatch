@@ -3,6 +3,7 @@ package uk.sigma_co;
 import net.bettercombat.api.fx.ItemConditions;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.sigma_co.block.ModBlocks;
@@ -28,7 +29,17 @@ public class Grovewatch implements ModInitializer {
 
         ModWorldGeneration.generateModWorldGen();
 
-        // Better Combat trail condition
-        ItemConditions.register("isOnGrass", itemStack -> itemStack.get(ModComponents.ON_GRASS_COMPONENT));
+        if  (FabricLoader.getInstance().isModLoaded("bettercombat")){
+            // Better Combat trail condition
+            ItemConditions.register("isOnGrass", itemStack -> itemStack.get(ModComponents.ON_GRASS_COMPONENT));
+        }
     }
+
+    /*
+        TODO - Caffeined phantom repelling effect
+        TODO - Mocha Jungle Coffee variant (noClip foliage)
+        TODO - Bag of (roasted & normal) Coffee Beans block
+        TODO - Coffee liquid
+        TODO - Coffee drink Create mixing recipe
+     */
 }
