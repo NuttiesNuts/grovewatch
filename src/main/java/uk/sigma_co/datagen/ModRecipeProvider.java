@@ -8,15 +8,21 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
+import net.minecraft.world.level.ItemLike;
 import uk.sigma_co.Grovewatch;
 import uk.sigma_co.item.ModItems;
+import uk.sigma_co.tag.CompatibilityTags;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -50,7 +56,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.GROUND_COFFEE), has(ModItems.GROUND_COFFEE))
                         .save(output);
 
-                simpleCookingRecipe("thin_air", SmeltingRecipe::new, 100, ModItems.COFFEE_BEAN, ModItems.COFFEE_BEAN_ROASTED, 0.5f);
+                simplishCookingRecipe("thin_air", SmeltingRecipe::new, 100, ModItems.COFFEE_BEAN, ModItems.COFFEE_BEAN_ROASTED, 0.5f, CompatibilityTags.CREATE);
 
                 shaped(RecipeCategory.FOOD, ModItems.COFFEE, 1)
                         .pattern("ccc")
@@ -62,8 +68,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.COFFEE_BEAN_ROASTED), has(ModItems.COFFEE_BEAN_ROASTED))
                         .save(withConditions(output, ResourceConditions.not(ResourceConditions.allModsLoaded(Grovewatch.FARMERS_DELIGHT_ID))));
             }
+            // whatafah
+            public final  <T extends AbstractCookingRecipe> void simplishCookingRecipe(final String source, final AbstractCookingRecipe.Factory<T> factory, final int cookingTime, final ItemLike base, final ItemLike result, final float experience, String whatModMotherFkr) {
+                SimpleCookingRecipeBuilder var10000 = SimpleCookingRecipeBuilder.generic(Ingredient.of(base), RecipeCategory.FOOD, CookingBookCategory.FOOD, result, experience, cookingTime, factory).unlockedBy(getHasName(base), this.has(base));
+                String var10002 = getItemName(result);
+                var10000.save(withConditions(output, ResourceConditions.not(ResourceConditions.allModsLoaded(whatModMotherFkr))), var10002 + "_from_" + source);
+            }
         };
     }
+
+
 
     @Override
     public String getName() {

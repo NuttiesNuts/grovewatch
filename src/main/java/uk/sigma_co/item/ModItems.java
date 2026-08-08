@@ -37,12 +37,12 @@ public class ModItems {
 
     public static final Item COFFEE_BERRY = registerItem("coffee_berry",
             properties -> new BlockItem(ModBlocks.COFFEE_BUSH,
-                    properties.useItemDescriptionPrefix().food(new FoodProperties(1, 0.5f, true))));
+                    properties.useItemDescriptionPrefix().food(new FoodProperties(2, 0.5f, true))));
 
     public static final Item COFFEE_BEAN = register(
             ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "coffee_bean")),
             Item::new,
-            new Item.Properties().food(new FoodProperties(1, 0.5f, true))
+            new Item.Properties()
     );
     public static final Item COFFEE_BEAN_ROASTED = register(
             ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Grovewatch.MOD_ID, "coffee_bean_roasted")),

@@ -1,0 +1,15 @@
+{
+  "type": "create:milling",
+  "ingredient": "grovewatch:coffee_bean_roasted",
+  "processing_time": 70,
+  "results": [
+    {
+      "count": 2,
+      "id": "grovewatch:ground_coffee"
+    },
+    {
+      "chance": 0.1,
+      "id": "grovewatch:ground_coffee"
+    }
+  ]
+}
