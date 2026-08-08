@@ -36,7 +36,6 @@ public class Grovewatch implements ModInitializer {
     }
 
     /*
-        TODO - Caffeined phantom repelling effect
         TODO - Mocha Jungle Coffee variant (noClip foliage)
         TODO - Bag of (roasted & normal) Coffee Beans block
         TODO - Coffee liquid
